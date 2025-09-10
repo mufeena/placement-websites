@@ -1,0 +1,59 @@
+/* Navbar underline hover */
+.nav-links a {
+  position: relative;
+  padding-bottom: 4px;
+}
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background: #facc15; /* Yellow underline */
+  transition: 0.3s;
+}
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Hero fade-in animation */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.hero h2, .hero p, .hero a {
+  animation: fadeInUp 1s ease forwards;
+}
+.hero p { animation-delay: 0.2s; }
+.hero a { animation-delay: 0.4s; }
+
+/* Job card hover */
+.job-card {
+  transition: all 0.3s ease;
+}
+.job-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+}
+
+/* Button glow */
+.cta-btn {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.cta-btn:hover {
+  background: #2563eb; /* darker blue */
+  color: white;
+  box-shadow: 0 0 15px #60a5fa;
+}
+
+/* Stats counter animation */
+@keyframes counterUp {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+.stat-box {
+  animation: counterUp 0.8s ease;
+}
