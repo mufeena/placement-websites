@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Edit Company Profile | Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="top-bar">
+    <h2>Edit Company Profile</h2>
+    <a href="index.html" class="back-btn">← Back</a>
+  </header>
+
+  <main class="dashboard-container">
+    <form class="profile-form" id="companyProfileForm">
+      <label>Company Name</label>
+      <input type="text" id="companyName" value="TechPath Solutions" required />
+
+      <label>Industry</label>
+      <input type="text" id="industry" value="Software Development" required />
+
+      <label>Location</label>
+      <input type="text" id="location" value="Chennai, India" required />
+
+      <label>Email</label>
+      <input type="email" id="email" value="hr@techpath.com" required />
+
+      <div class="btn-group">
+        <button type="submit" class="save-btn">Save Changes</button>
+        <button type="reset" class="reset-btn">Reset</button>
+      </div>
+    </form>
+
+    <div class="saved-message" id="savedMessage" style="display: none;">
+      ✅ Profile updated successfully!
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

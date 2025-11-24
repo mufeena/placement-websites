@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Post Job | Company Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="top-bar">
+    <h2>Post New Job</h2>
+    <a href="index.html" class="back-btn">← Back</a>
+  </header>
+
+  <main class="dashboard-container">
+    <form class="post-job-form">
+      <label>Job Title</label>
+      <input type="text" placeholder="e.g. Frontend Developer" required />
+
+      <label>Location</label>
+      <input type="text" placeholder="e.g. Chennai, India" />
+
+      <label>Job Type</label>
+      <select>
+        <option>Full-Time</option>
+        <option>Internship</option>
+        <option>Part-Time</option>
+      </select>
+
+      <label>Description</label>
+      <textarea rows="5" placeholder="Enter job details here..."></textarea>
+
+      <button type="submit">Post Job</button>
+    </form>
+  </main>
+</body>
+</html>
